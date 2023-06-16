@@ -1,0 +1,132 @@
+*{
+    -fx-white-100: #FFFFFF;
+    -fx-green-100: #8CC048;
+    -fx-blue-100: #006496;
+    -fx-gray-100: #DEE3EA;
+
+    -fx-black-25: #00000040;
+    -fx-blue-8: #00649614;
+    -fx-blue-5: #0064960d;
+    -fx-blue-3: #00649608;
+    -fx-gray-11: #5d5e611c;
+    -fx-secondary-black-100: #1A1C1E;
+    -fx-secondary-white-100: #FCFCFF;
+
+    -fx-text-color: #1C1B1F;
+    -fx-text-inactive-color: #1c1b1f80;
+
+    -fx-black-input-text: #1C1B1F;
+    -fx-black-input-label: #49454F;
+
+    -fx-inactive: #9E9E9E;
+    -fx-success: #4CB051;
+    -fx-error: #BA1A1A;
+
+    -fx-step-active-text: #000000d9;
+    -fx-step-inactive-text: #00000061;
+}
+*{
+    -fx-text-fill: -fx-text-color;
+}
+
+/**************************************************
+ * CONTAINERS
+**************************************************/
+.scene-base{
+    -fx-background-color: -fx-white-100;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(gaussian, -fx-black-25, 15, 0, 0, 0);
+    -fx-background-insets: 10;
+}
+.scene-platform-base{
+    -fx-background-color: -fx-white-100;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-background-insets: 10;
+
+}
+.scene-loader-background{
+    -fx-background-color: -fx-white-100;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+
+}
+.scene-background{
+    -fx-background-color: -fx-blue-3;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+.scene-content-background{
+    -fx-background-color: -fx-white-100;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+/**************************************************
+ * BUTTON
+**************************************************/
+#primary-button{
+    -fx-background-color: -fx-blue-100;
+    -fx-text-fill: -fx-white-100;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+#secondary-button{
+    -fx-background-color: transparent;
+    -fx-border-color: -fx-blue-100;
+    -fx-text-fill: -fx-blue-100;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+.link-button{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-blue-100;
+    -fx-cursor: hand;
+}
+
+/**************************************************
+ * INPUT
+**************************************************/
+.input {
+    -fx-border-color: -fx-gray-100;
+}
+.input:focus-within{
+    -fx-border-color: -fx-blue-100;
+}
+
+.select-input{
+    -mfx-main: -fx-blue-100;
+}
+.select-input:hover {
+    -fx-background-color: -fx-blue-3;
+}
+.mfx-combo-box-cell:hover {
+    -fx-background-color: -fx-blue-5;
+}
+.mfx-combo-box-cell:selected {
+    -fx-background-color: -fx-blue-8;
+}
+
+
+/**************************************************
+ * PROGRESS BAR
+**************************************************/
+#progress-bar .track{
+    -fx-fill: -fx-gray-100;
+}
+.mfx-progress-bar .bar1{
+    -fx-fill: -fx-success;
+}
+
+/**************************************************
+ * TEXT
+**************************************************/
+.active-text{
+    -fx-text-fill:  -fx-text-color;
+}
+.inactive-text{
+    -fx-text-fill: -fx-text-inactive-color;
+}
